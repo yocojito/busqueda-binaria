@@ -48,3 +48,45 @@ int main(){
                         break;
 
                 }
+
+                
+
+                if(a[med]>dato){
+
+                        sup=med;
+
+                        med=(inf+sup)/2;
+
+                }
+
+                if(a[med]<dato){
+
+                        inf=med;
+
+                        med= (inf+sup)/2;
+
+                }
+
+        }        
+
+        
+
+        if(b=='F'){
+
+                printf("El numero no esta dentro del arreglo");
+
+        }
+
+        else if(b=='V'){
+
+                printf("El numero si existe y esta ubicado en la posicion: %i", med);
+
+        }
+
+        
+
+        getch ();
+
+        return 0;
+
+}
